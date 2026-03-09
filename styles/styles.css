@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #121313;
+    background-color: #fafafa;
+}
+
+header,
+footer {
+    background-color: #f5f5f5;
+    color: #0a8b90;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 4px solid #028585;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+nav {
+    background-color: #09737a;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 8px 12px;
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #097c93;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+h1 {
+    color: #015a8a;
+    margin: 0.5rem 0 1rem;
+    font-size: 1.9rem;
+    line-height: 1.25;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    padding: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    line-height: 1.6;
+}
+
+aside {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #079696;
+    background-color: #f9f9f9;
+    color: #222;
+    display: inline-block;
+    vertical-align: center;
+}
+
+aside h2 {
+    margin: 0 0 0.50rem 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 4px;
+}
+
+@media (min-width: 980px) {
+    .content-wrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    main {
+        flex: 1 1 auto;
+    }
+}
+
+@media (max-width: 979px) {
+    aside {
+        width: auto;
+        display: block;
+        margin: 10px auto 20px;
+    }
+}
