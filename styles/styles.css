@@ -97,7 +97,7 @@ aside {
     border: 1px solid #079696;
     background-color: #f9f9f9;
     color: #222;
-    display: inline-block;
+    display: block;
     vertical-align: center;
 }
 
