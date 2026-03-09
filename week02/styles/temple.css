@@ -34,12 +34,16 @@ img {
 
 section {
     margin: 20px 0;
-    border: 1px solid rgb(0, 0, 0 / 10%);
+    border: 1px solid rgb(0 0 0/ 10%);
     padding: 10px;
     background-color: #abe;
     font-size: .9rem;
 }
 
+section p {
+    margin: 10px;
+}
+
 footer {
-    font-size: .9rem;
+    font-size: .90rem;
 }
