@@ -5,6 +5,9 @@
     --accent2-color: #e9c46a;
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --on-primary: #ffffff;
+    --on-accent1: #ffffff;
+    --text-color: #133936;
 }
 
 * {
@@ -15,15 +18,17 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--text-color);
     background: #ffffff;
 }
 
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 header {
@@ -32,7 +37,7 @@ header {
     justify-content: space-between;
     gap: 1rem;
     background-color: var(--primary-color);
-    color: #d0d0d0;
+    color: var(--on-primary);
     padding: 12px 16px;
 }
 
@@ -49,9 +54,9 @@ header nav ul {
 }
 
 header nav a {
-    color: #fff;
+    color: var(--on-primary);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 header nav a:hover,
@@ -62,15 +67,15 @@ header nav a:focus {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 16px 0;
+    padding: 8px 0;
 }
 
 .hero {
@@ -90,9 +95,8 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.85;
-    background-color: var(--accent1-color);
-    color: #ffffff;
+    background-color: rgba(19, 118, 108, 0.94);
+    color: var(--on-accent1);
 }
 
 .hero article {
@@ -101,7 +105,7 @@ article {
     right: 20px;
     bottom: 20px;
     padding: 16px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.98);
     color: #222;
     border-radius: 8px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -116,6 +120,15 @@ article {
 
 section h2 {
     margin-bottom: 4px;
+    border-left: 6px solid var(--secondary-color);
+    padding-left: 8px;
+}
+
+.cta {
+    background-color: var(--accent2-color);
+    color: #2a2a2a;
+    padding: 12px;
+    border-radius: 6px;
 }
 
 footer {
