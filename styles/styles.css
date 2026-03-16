@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,38 +12,37 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #121313;
-    background-color: #fafafa;
+    color: #0a616e;
+    background-color: #f5f2f1;
 }
 
 header,
 footer {
-    background-color: #f5f5f5;
-    color: #0a8b90;
+    background-color: #fdffff;
+    color: #077d72;
     padding: 10px;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
 }
 
 footer {
     margin-top: 20px;
     border-top: 4px solid #028585;
-    text-align: center;
     padding-top: 10px;
     font-size: 0.9rem;
 }
 
 nav {
-    background-color: #09737a;
+    background-color: #028585;
     padding: 10px;
-    display: flex;
+    display: block;
     gap: 15px;
     justify-content: center;
     align-items: center;
 }
 
 nav a {
-    color: #fff;
+    color: #f3f7f7;
     padding: 8px 12px;
     display: block;
     text-decoration: none;
@@ -50,8 +51,8 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #097c93;
-    background-color: whitesmoke;
+    color: #0c8d7e;
+    background-color: rgb(241, 237, 237);
     outline: none;
 }
 
@@ -62,7 +63,7 @@ main {
 }
 
 h1 {
-    color: #015a8a;
+    color: #0a8289;
     margin: 0.5rem 0 1rem;
     font-size: 1.9rem;
     line-height: 1.25;
@@ -71,12 +72,13 @@ h1 {
 main img {
     width: 200px;
     height: auto;
-    border: 2px solid #ccc;
+    border: 2px solid #10796c;
     padding: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     display: block;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
+    float: right;
 }
 
 img {
@@ -86,7 +88,7 @@ img {
 
 p {
     padding: 0;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
     line-height: 1.6;
 }
 
@@ -94,15 +96,13 @@ aside {
     width: 300px;
     margin: 20px;
     padding: 10px;
-    border: 1px solid #079696;
+    border: 1px solid #f8fafa;
     background-color: #f9f9f9;
-    color: #222;
-    display: block;
-    vertical-align: center;
+    color: #2c2a2a;
 }
 
 aside h2 {
-    margin: 0 0 0.50rem 0;
+    margin: 0 0 0.5rem;
     font-size: 0.9rem;
     color: #333;
 }
@@ -130,7 +130,16 @@ aside img {
 @media (max-width: 979px) {
     aside {
         width: auto;
-        display: block;
         margin: 10px auto 20px;
     }
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    /* Fixed this line */
+    background-color: #c7e8e2;
+    color: #000;
 }
