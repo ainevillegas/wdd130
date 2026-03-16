@@ -1,34 +1,42 @@
 :root {
-    --primary-color: #159483;
-    --secondary-color: #f7b267;
-    --accent1-color: #13766c;
-    --accent2-color: #e9c46a;
-    --heading-font: Georgia, "Times New Roman", serif;
-    --body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    --on-primary: #ffffff;
-    --on-accent1: #ffffff;
-    --text-color: #133936;
+    --primary-500: #159483;
+    --primary-700: #0f4f49;
+    --accent-1: #13766c;
+    --accent-2: #e9c46a;
+    --warm-2: #f7b267;
+    --text: #133936;
+    --on-dark: #ffffff;
+    --on-accent2: #1b1b1b;
+    --mxw: 840px;
+    --sp-1: 8px;
+    --sp-2: 12px;
+    --sp-3: 16px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    height: 100%
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--text-color);
-    background: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.5;
 }
 
 header,
 main,
 footer {
-    max-width: 840px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: var(--mxw);
+    margin-inline: auto;
+    padding-inline: var(--sp-3);
 }
 
 header {
@@ -36,56 +44,62 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    background-color: var(--primary-color);
-    color: var(--on-primary);
-    padding: 12px 16px;
+    background: var(--primary-700);
+    color: var(--on-dark);
+    padding: var(--sp-2) var(--sp-3);
 }
 
 header .logo img {
     display: block;
     max-height: 64px;
-    width: auto;
+    width: auto
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1rem
 }
 
 header nav a {
-    color: var(--on-primary);
+    color: var(--on-dark);
     text-decoration: none;
     font-weight: 700;
 }
 
 header nav a:hover,
 header nav a:focus {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 h1,
 h2 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
+    font-family: Georgia, "Times New Roman", serif;
 }
 
-nav,
+h1 {
+    color: var(--accent-1)
+}
+
+h2 {
+    color: var(--accent-1);
+    margin-block: var(--sp-2) var(--sp-1)
+}
+
 p,
 section,
 article {
-    margin: 16px 0;
-    padding: 8px 0;
+    margin-block: var(--sp-3)
 }
 
 .hero {
-    position: relative;
+    position: relative
 }
 
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: auto
 }
 
 .hero h1 {
@@ -93,10 +107,10 @@ article {
     top: 20px;
     left: 0;
     width: 100%;
-    padding: 16px;
+    padding: var(--sp-3);
     text-align: center;
-    background-color: rgba(19, 118, 108, 0.94);
-    color: var(--on-accent1);
+    background: rgba(19, 118, 108, .94);
+    color: var(--on-dark);
 }
 
 .hero article {
@@ -104,30 +118,25 @@ article {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    padding: 16px;
-    background-color: rgba(255, 255, 255, 0.98);
+    padding: var(--sp-3);
+    background: rgba(255, 255, 255, .98);
     color: #222;
     border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    margin: 0 0 8px 12px;
-    border-radius: 6px;
+    margin: 0 0 var(--sp-1) var(--sp-2);
+    border-radius: 6px
 }
 
-section h2 {
-    margin-bottom: 4px;
-    border-left: 6px solid var(--secondary-color);
-    padding-left: 8px;
-}
-
-.cta {
-    background-color: var(--accent2-color);
-    color: #2a2a2a;
-    padding: 12px;
+.cta,
+.on-accent-2 {
+    background: var(--accent-2);
+    color: var(--on-accent2);
+    padding: var(--sp-2);
     border-radius: 6px;
 }
 
@@ -136,16 +145,16 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 12px 16px 24px;
+    padding: var(--sp-2) var(--sp-3) var(--sp-3);
 }
 
 .socialmedia a {
     text-decoration: none;
-    margin-right: 8px;
+    margin-right: 8px
 }
 
 .socialmedia img {
-    display: inline-block;
     width: 24px;
     height: 24px;
+    display: inline-block
 }
