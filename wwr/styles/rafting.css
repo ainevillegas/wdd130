@@ -1,12 +1,11 @@
 :root {
-    --primary-500: #159483;
-    --primary-700: #0f4f49;
+    --primary-700: #12675f;
     --accent-1: #13766c;
     --accent-2: #e9c46a;
-    --warm-2: #f7b267;
     --text: #133936;
     --on-dark: #ffffff;
     --on-accent2: #1b1b1b;
+
     --mxw: 840px;
     --sp-1: 8px;
     --sp-2: 12px;
@@ -17,11 +16,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0
-}
-
-html,
-body {
-    height: 100%
 }
 
 body {
@@ -64,7 +58,7 @@ header nav ul {
 header nav a {
     color: var(--on-dark);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 700
 }
 
 header nav a:hover,
@@ -74,7 +68,7 @@ header nav a:focus {
 
 h1,
 h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, "Times New Roman", serif
 }
 
 h1 {
@@ -86,10 +80,19 @@ h2 {
     margin-block: var(--sp-2) var(--sp-1)
 }
 
-p,
-section,
-article {
-    margin-block: var(--sp-3)
+.on-accent-2,
+.cta {
+    background: var(--accent-2);
+    color: var(--on-accent2);
+    padding: var(--sp-2);
+    border-radius: 6px;
+}
+
+.on-accent-2 h1,
+.on-accent-2 h2,
+.cta h1,
+.cta h2 {
+    color: inherit
 }
 
 .hero {
@@ -130,14 +133,6 @@ article {
     width: 125px;
     margin: 0 0 var(--sp-1) var(--sp-2);
     border-radius: 6px
-}
-
-.cta,
-.on-accent-2 {
-    background: var(--accent-2);
-    color: var(--on-accent2);
-    padding: var(--sp-2);
-    border-radius: 6px;
 }
 
 footer {
