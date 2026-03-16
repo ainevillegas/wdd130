@@ -143,3 +143,7 @@ aside img {
     background-color: #c7e8e2;
     color: #000;
 }
+
+.indent {
+    padding-left: 2rem;
+}
