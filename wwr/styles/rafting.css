@@ -5,16 +5,6 @@
     box-sizing: border-box;
 }
 
-/* ===================== CSS Variables ===================== */
-:root {
-    --primary-700: #0f4f49;
-    --accent-1: #13766c;
-    --accent-2: #e9c46a;
-    --text: #133936;
-    --on-dark: #ffffff;
-    --on-accent2: #1b1b1b;
-}
-
 /* ===================== Base ===================== */
 html,
 body {
@@ -23,7 +13,7 @@ body {
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text);
+    color: #133936;
     background-color: #ffffff;
     line-height: 1.5;
 }
@@ -31,7 +21,7 @@ body {
 header,
 main,
 footer {
-    max-width: 840px;
+    width: 840px;
     margin: 0 auto;
     padding: 16px;
 }
@@ -41,9 +31,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    background-color: var(--primary-700);
-    color: var(--on-dark);
+    gap: 16px;
+    background-color: #0f4f49;
+    color: #ffffff;
 }
 
 header .logo img {
@@ -59,9 +49,9 @@ nav ul {
 }
 
 nav a {
-    color: var(--on-dark);
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 nav a:hover,
@@ -76,11 +66,11 @@ h2 {
 }
 
 h1 {
-    color: var(--accent-1);
+    color: #13766c;
 }
 
 h2 {
-    color: var(--accent-1);
+    color: #13766c;
     margin-bottom: 8px;
 }
 
@@ -109,7 +99,7 @@ article {
     padding: 16px;
     text-align: center;
     background-color: rgba(19, 118, 108, 0.94);
-    color: var(--on-dark);
+    color: #ffffff;
 }
 
 .hero article {
@@ -133,15 +123,15 @@ article {
 
 /* ===================== Accent Section ===================== */
 .cta {
-    background-color: var(--accent-2);
-    color: var(--on-accent2);
+    background-color: #e9c46a;
+    color: #1b1b1b;
     padding: 16px;
     border-radius: 6px;
 }
 
 .cta h1,
 .cta h2 {
-    color: inherit;
+    color: #1b1b1b;
 }
 
 /* ===================== Footer and Social ===================== */
@@ -149,19 +139,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 16px;
     margin-top: 24px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-    margin-right: 8px;
-}
-
-.socialmedia img {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-}
-
-``
+.social
