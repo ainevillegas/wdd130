@@ -1,11 +1,11 @@
-/* ===== Reset ===== */
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== Base ===== */
+/* ===== BASE ===== */
 html,
 body {
     height: 100%;
@@ -26,7 +26,7 @@ footer {
     padding: 16px;
 }
 
-/* ===== Header and Navigation ===== */
+/* ===== HEADER ===== */
 header {
     display: flex;
     align-items: center;
@@ -37,9 +37,9 @@ header {
 
 header img {
     max-height: 64px;
-    width: auto;
 }
 
+/* ===== NAVIGATION ===== */
 nav ul {
     list-style: none;
     display: flex;
@@ -59,7 +59,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== Headings ===== */
+/* ===== HEADINGS ===== */
 h1,
 h2 {
     font-family: Georgia, "Times New Roman", serif;
@@ -80,14 +80,13 @@ article {
     margin-top: 16px;
 }
 
-/* ===== Hero Section ===== */
+/* ===== HERO ===== */
 .hero {
     position: relative;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -110,7 +109,6 @@ article {
     padding: 16px;
     background-color: #ffffff;
     color: #222222;
-    border-radius: 8px;
 }
 
 .hero article img {
@@ -119,27 +117,25 @@ article {
     margin-left: 12px;
 }
 
-/* ===== Accent Section ===== */
+/* ===== ACCENT SECTION ===== */
 .cta {
     background-color: #e9c46a;
     color: #1b1b1b;
     padding: 16px;
-    border-radius: 6px;
 }
 
 .cta h2 {
     color: #1b1b1b;
 }
 
-/* ===== Footer ===== */
+/* ===== FOOTER ===== */
 footer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 24px;
 }
 
-/* ===== Social Media ===== */
+/* ===== SOCIAL MEDIA ===== */
 .socialmedia a {
     margin-right: 8px;
 }
