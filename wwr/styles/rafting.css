@@ -1,11 +1,16 @@
-/* ===== RESET ===== */
+/* ===== Root ===== */
+:root {
+    --audit-color: #ffffff;
+}
+
+/* ===== Reset ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== BASE ===== */
+/* ===== Base ===== */
 html,
 body {
     height: 100%;
@@ -14,7 +19,7 @@ body {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #133936;
-    background-color: #ffffff;
+    background-color: var(--audit-color);
     line-height: 1.5;
 }
 
@@ -26,11 +31,11 @@ footer {
     padding: 16px;
 }
 
-/* ===== HEADER ===== */
+/* ===== Header ===== */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: #0f4f49;
     color: #ffffff;
 }
@@ -39,7 +44,7 @@ header img {
     max-height: 64px;
 }
 
-/* ===== NAVIGATION ===== */
+/* ===== Navigation ===== */
 nav ul {
     list-style: none;
     display: flex;
@@ -59,7 +64,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== HEADINGS ===== */
+/* ===== Headings ===== */
 h1,
 h2 {
     font-family: Georgia, "Times New Roman", serif;
@@ -80,7 +85,7 @@ article {
     margin-top: 16px;
 }
 
-/* ===== HERO ===== */
+/* ===== Hero ===== */
 .hero {
     position: relative;
 }
@@ -93,7 +98,6 @@ article {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -117,7 +121,7 @@ article {
     margin-left: 12px;
 }
 
-/* ===== ACCENT SECTION ===== */
+/* ===== Accent Section ===== */
 .cta {
     background-color: #e9c46a;
     color: #1b1b1b;
@@ -128,14 +132,14 @@ article {
     color: #1b1b1b;
 }
 
-/* ===== FOOTER ===== */
+/* ===== Footer ===== */
 footer {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
 }
 
-/* ===== SOCIAL MEDIA ===== */
+/* ===== Social ===== */
 .socialmedia a {
     margin-right: 8px;
 }
