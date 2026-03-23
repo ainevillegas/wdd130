@@ -128,9 +128,9 @@ aside h2 {
     font-size: 0.9rem;
     color: #333;
     display: flex;
-    position: absolute;
-    top: 85px;
-    left: 125px;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 aside img {
