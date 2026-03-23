@@ -1,6 +1,10 @@
 /* ===== Root ===== */
 :root {
     --audit-color: #ffffff;
+    --primary-color: #0f4f49;
+    --secondary-color: #13766c;
+    --accent-color: #e9c46a;
+    --text-dark: #133936;
 }
 
 /* ===== Reset ===== */
@@ -18,7 +22,7 @@ body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #133936;
+    color: var(--text-dark);
     background-color: var(--audit-color);
     line-height: 1.5;
 }
@@ -31,27 +35,25 @@ footer {
     padding: 16px;
 }
 
-/* ===== Header ===== */
+/* ==== css grid === */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: #0f4f49;
+    background-color: var(--primary-color);
     color: #ffffff;
+    gap: 24px;
 }
 
 header img {
     max-height: 64px;
 }
 
-/* ===== Navigation ===== */
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav li {
-    margin-left: 16px;
+    justify-content: flex-end;
+    gap: 16px;
 }
 
 nav a {
@@ -71,21 +73,22 @@ h2 {
 }
 
 h1 {
-    color: #13766c;
+    color: var(--secondary-color);
 }
 
 h2 {
-    color: #13766c;
+    color: var(--secondary-color);
     margin-bottom: 8px;
 }
 
-p,
+/* ===== Spacing ===== */
 section,
-article {
+article,
+p {
     margin-top: 16px;
 }
 
-/* ===== Hero ===== */
+/* ==== hero section === */
 .hero {
     position: relative;
 }
@@ -101,7 +104,7 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: #13766c;
+    background-color: var(--secondary-color);
     color: #ffffff;
 }
 
@@ -121,9 +124,53 @@ article {
     margin-left: 12px;
 }
 
-/* ===== Accent Section ===== */
+/* ==== history section === */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.history img {
+    width: 100%;
+    background-color: #dddddd;
+    padding: 16px;
+}
+
+/* ==== adventure section === */
+.adventures {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.adventures h2 {
+    margin-bottom: 16px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    display: block;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* ==== call to action === */
 .cta {
-    background-color: #e9c46a;
+    background-color: var(--accent-color);
     color: #1b1b1b;
     padding: 16px;
 }
@@ -132,19 +179,24 @@ article {
     color: #1b1b1b;
 }
 
-/* ===== Footer ===== */
+/* ==== footer === */
 footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 24px;
+    background-color: #e6e6e6;
 }
 
-/* ===== Social ===== */
-.socialmedia a {
-    margin-right: 8px;
+/* ===== Social Media Icons ===== */
+.socialmedia {
+    display: flex;
+    gap: 12px;
 }
 
 .socialmedia img {
     width: 24px;
     height: 24px;
 }
+
+``
