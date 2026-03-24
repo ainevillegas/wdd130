@@ -35,7 +35,7 @@ footer {
     padding: 16px;
 }
 
-/* ==== css grid === */
+/* ===== Header Grid ===== */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -88,7 +88,7 @@ p {
     margin-top: 16px;
 }
 
-/* ==== hero section === */
+/* ===== Hero ===== */
 .hero {
     position: relative;
 }
@@ -124,7 +124,7 @@ p {
     margin-left: 12px;
 }
 
-/* ==== history section === */
+/* ===== History ===== */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -138,65 +138,6 @@ p {
     padding: 16px;
 }
 
-/* ==== adventure section === */
+/* ===== Adventures ===== */
 .adventures {
     margin-top: 32px;
-    text-align: center;
-}
-
-.adventures h2 {
-    margin-bottom: 16px;
-}
-
-.adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
-}
-
-.adventure-gallery figure {
-    margin: 0;
-}
-
-.adventure-gallery img {
-    width: 100%;
-    display: block;
-}
-
-.adventure-gallery figcaption {
-    margin-top: 8px;
-    font-size: 0.9rem;
-}
-
-/* ==== call to action === */
-.cta {
-    background-color: var(--accent-color);
-    color: #1b1b1b;
-    padding: 16px;
-}
-
-.cta h2 {
-    color: #1b1b1b;
-}
-
-/* ==== footer === */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 24px;
-    background-color: #e6e6e6;
-}
-
-/* ===== Social Media Icons ===== */
-.socialmedia {
-    display: flex;
-    gap: 12px;
-}
-
-.socialmedia img {
-    width: 24px;
-    height: 24px;
-}
-
-``
