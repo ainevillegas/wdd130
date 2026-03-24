@@ -35,14 +35,13 @@ footer {
     padding: 16px;
 }
 
-/* ===== Header Grid ===== */
+/* ===== Header ===== */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
     gap: 24px;
+    background-color: var(--primary-color);
 }
 
 header img {
@@ -72,13 +71,9 @@ h2 {
     font-family: Georgia, "Times New Roman", serif;
 }
 
-h1 {
-    color: var(--secondary-color);
-}
-
+h1,
 h2 {
     color: var(--secondary-color);
-    margin-bottom: 8px;
 }
 
 /* ===== Spacing ===== */
@@ -116,7 +111,6 @@ p {
     padding: 16px;
     background-color: #ffffff;
     color: #222222;
-    text-align: justify;
 }
 
 .hero article img {
@@ -128,7 +122,7 @@ p {
 /* ===== History ===== */
 .history {
     display: grid;
-    grid-template-columns: 1/2;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
     align-items: center;
     text-align: justify;
@@ -136,8 +130,8 @@ p {
 
 .history img {
     width: 100%;
-    background-color: #dddddd;
     padding: 16px;
+    background-color: #dddddd;
 }
 
 /* ===== Adventures ===== */
@@ -154,23 +148,11 @@ p {
 
 .adventure-gallery img {
     width: 100%;
-    display: block;
 }
 
 .adventure-gallery figcaption {
     margin-top: 8px;
     font-size: 0.9rem;
-}
-
-/* ===== CTA ===== */
-.cta {
-    background-color: var(--accent-color);
-    color: #1b1b1b;
-    padding: 16px;
-}
-
-.cta h2 {
-    color: #1b1b1b;
 }
 
 /* ===== Footer ===== */
@@ -191,3 +173,5 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+``
