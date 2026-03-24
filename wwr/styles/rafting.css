@@ -2,8 +2,11 @@
 :root {
     --audit-color: #ffffff;
     --primary-color: #0f4f49;
+    /* header background */
+    --primary-text: #ffffff;
+    /* ensure high contrast on header */
     --secondary-color: #13766c;
-    --accent-color: #e9c46a;
+    /* accents */
     --text-dark: #133936;
 }
 
@@ -43,10 +46,12 @@ header {
     align-items: center;
     gap: 24px;
     background-color: var(--primary-color);
+    color: var(--primary-text);
 }
 
 header img {
     max-height: 64px;
+    display: block;
 }
 
 nav ul {
@@ -57,7 +62,7 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: var(--primary-text);
     text-decoration: none;
     font-weight: bold;
 }
@@ -88,18 +93,20 @@ p {
 .hero img {
     width: 100%;
     display: block;
+    height: auto;
 }
 
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
+    left: 0;
+    right: 0;
     padding: 16px;
     text-align: center;
-    background-color: var(--secondary-color);
+    background-color: rgba(19, 118, 108, 0.95);
+    /* slightly transparent to keep contrast */
     color: #ffffff;
     margin: 0;
-    /* ensure validator doesn't see default margin */
 }
 
 .hero article {
@@ -115,6 +122,7 @@ p {
 .hero article img {
     float: right;
     width: 125px;
+    height: auto;
     margin-left: 12px;
 }
 
