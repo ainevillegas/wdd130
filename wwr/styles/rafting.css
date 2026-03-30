@@ -2,11 +2,8 @@
 :root {
     --audit-color: #ffffff;
     --primary-color: #0f4f49;
-    /* header background */
     --primary-text: #ffffff;
-    /* ensure high contrast on header */
     --secondary-color: #13766c;
-    /* accents */
     --text-dark: #133936;
 }
 
@@ -104,7 +101,6 @@ p {
     padding: 16px;
     text-align: center;
     background-color: rgba(19, 118, 108, 0.95);
-    /* slightly transparent to keep contrast */
     color: #ffffff;
     margin: 0;
 }
@@ -221,7 +217,6 @@ footer {
 }
 
 /* ===== Contact Page ===== */
-
 .contact-info {
     text-align: center;
 }
@@ -263,6 +258,13 @@ footer {
     font-weight: normal;
 }
 
+/* Improve checkbox spacing */
+.contact-form .checkbox input {
+    width: auto;
+    margin-top: 0;
+    margin-right: 8px;
+}
+
 .contact-form button {
     margin-top: 16px;
     padding: 10px;
@@ -278,7 +280,6 @@ footer {
 }
 
 /* ===== Employees ===== */
-
 .employees {
     margin-top: 40px;
     text-align: center;
@@ -304,5 +305,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-``
