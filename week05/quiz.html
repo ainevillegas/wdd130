@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-row">
+            <div class="title-icon">✓</div>
+            <h1 class="quiz-title">Basic HTML and CSS Quiz</h1>
+        </div>
+
+        <form class="quiz-form" action="#" method="post" novalidate>
+            <div class="question">
+                <label for="q1"><span class="qnum">1.</span> What does the acronym CSS stand
+                    for?</label>
+                <input type="text" id="q1" name="q1" placeholder="">
+            </div>
+
+            <div class="question">
+                <label for="q2"><span class="qnum">2.</span> How are id and class attributes
+                    selected in CSS?</label>
+                <textarea id="q2" name="q2" placeholder=""></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q3"><span class="qnum">3.</span> Which of the following is a valid CSS
+                    comment?</label>
+                <select id="q3" name="q3" aria-label="Choose a comment">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="a">// comment</option>
+                    <option value="b">/* comment */</option>
+                    <option value="c">&lt;!-- comment --&gt;</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q4"><span class="qnum">4.</span> What is the bottom margin given this
+                    declaration?</label>
+                <pre class="code-sample"><code>margin: 10px 5px 15px;</code></pre>
+                <input type="number" id="q4" name="q4" placeholder="">
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+        </form>
+
+        <div class="example-note">
+            <p>Example Quiz — style your form using your own design and content.</p>
+        </div>
+    </div>
+</body>
+
+</html>
