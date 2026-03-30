@@ -5,11 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Us | White Water Rafting (WWR)</title>
-
     <meta name="description"
-      content="Contact White Water Rafting (WWR) for reservations, general inquiries, or website suggestions. Find our address, phone number, map, and staff profiles." />
+      content="Contact White Water Rafting for reservations, general inquiries, or website suggestions." />
     <meta name="author" content="Aine Villegas" />
-
     <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
@@ -45,46 +43,56 @@
             <div class="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468124!3d37.774929679759504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2f6e2f45%3A0x4e5f09f6dfb1eb0!2sCalifornia!5e0!3m2!1sen!2sus!4v000000000"
-                  title="White Water Rafting location map" allowfullscreen loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  title="White Water Rafting location map" allowfullscreen loading="lazy"></iframe>
             </div>
 
             <form class="contact-form" action="#" method="post">
                 <fieldset>
                     <legend>Get in Touch</legend>
 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required autocomplete="name" />
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required autocomplete="name" />
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required autocomplete="email" />
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" />
+                    </div>
 
-                    <p>Message Purpose</p>
+                    <div class="form-row">
+                        <p>Message Purpose</p>
 
-                    <label for="purpose-general">
-                        <input type="radio" name="purpose" id="purpose-general" value="general"
-                          required />
-                        General Inquiry
-                    </label>
+                        <label for="purpose-general" class="radio-label">
+                            <input type="radio" id="purpose-general" name="purpose" value="general"
+                              required />
+                            General Inquiry
+                        </label>
 
-                    <label for="purpose-reservation">
-                        <input type="radio" name="purpose" id="purpose-reservation"
-                          value="reservation" />
-                        Reservation Question
-                    </label>
+                        <label for="purpose-reservation" class="radio-label">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation" />
+                            Reservation Question
+                        </label>
 
-                    <label for="purpose-website">
-                        <input type="radio" name="purpose" id="purpose-website" value="website" />
-                        Website Suggestion
-                    </label>
+                        <label for="purpose-website" class="radio-label">
+                            <input type="radio" id="purpose-website" name="purpose"
+                              value="website" />
+                            Website Suggestion
+                        </label>
+                    </div>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
 
-                    <label class="checkbox" for="newsletter">
-                        <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
-                        Please subscribe me to the monthly newsletter
-                    </label>
+                    <div class="form-row">
+                        <label for="newsletter" class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
 
                     <button type="submit">Get in Touch!</button>
                 </fieldset>
@@ -93,18 +101,15 @@
 
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
-
             <div class="employee-gallery">
                 <figure>
                     <img src="images/profile2.jpg" alt="Employee profile photo" />
                     <figcaption>River Guide</figcaption>
                 </figure>
-
                 <figure>
                     <img src="images/profile3.jpg" alt="Employee profile photo" />
                     <figcaption>Trip Coordinator</figcaption>
                 </figure>
-
                 <figure>
                     <img src="images/profile4.jpg" alt="Employee profile photo" />
                     <figcaption>Safety Instructor</figcaption>
@@ -115,7 +120,6 @@
 
     <footer>
         <p>&copy; 2026 White Water Rafting (WWR) • Aine Villegas</p>
-
         <nav class="socialmedia" aria-label="Social media links">
             <a href="https://facebook.com" target="_blank" rel="noopener">
                 <img src="images/facebook.png" alt="Facebook" />
