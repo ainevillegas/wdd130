@@ -82,7 +82,7 @@ p {
     margin-top: 16px;
 }
 
-/* ===== Hero ===== */
+/* ===== Hero (if used on other pages) ===== */
 .hero {
     position: relative;
 }
@@ -122,44 +122,6 @@ p {
     margin-left: 12px;
 }
 
-/* ===== History ===== */
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    align-items: center;
-    text-align: justify;
-}
-
-.history img {
-    width: 100%;
-    padding: 16px;
-    background-color: #dddddd;
-    display: block;
-}
-
-/* ===== Adventures ===== */
-.adventures {
-    margin-top: 32px;
-    text-align: center;
-}
-
-.adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
-}
-
-.adventure-gallery img {
-    width: 100%;
-    display: block;
-}
-
-.adventure-gallery figcaption {
-    margin-top: 8px;
-    font-size: 0.9rem;
-}
-
 /* ===== Footer ===== */
 footer {
     display: flex;
@@ -177,43 +139,6 @@ footer {
 .socialmedia img {
     width: 24px;
     height: 24px;
-}
-
-/* ===== Responsive tweaks ===== */
-@media (max-width: 900px) {
-
-    header,
-    main,
-    footer {
-        padding: 12px;
-    }
-
-    .history {
-        grid-template-columns: 1fr;
-    }
-
-    .adventure-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .hero article {
-        position: static;
-        margin-top: 12px;
-    }
-
-    .hero article img {
-        float: none;
-        display: block;
-        width: 100%;
-        margin-left: 0;
-        margin-top: 12px;
-    }
-
-    .adventure-gallery {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* ===== Contact Page ===== */
@@ -253,12 +178,11 @@ footer {
     margin-top: 4px;
 }
 
-.checkbox {
+.contact-form .checkbox {
     margin-top: 12px;
     font-weight: normal;
 }
 
-/* Improve checkbox spacing */
 .contact-form .checkbox input {
     width: auto;
     margin-top: 0;
@@ -293,9 +217,10 @@ footer {
 
 .employee-gallery img {
     width: 100%;
+    display: block;
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
