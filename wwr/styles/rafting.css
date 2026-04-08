@@ -325,3 +325,33 @@ footer {
     background-color: var(--primary-color);
     color: #ffffff;
 }
+
+/* =========================
+   HOME GRID (CENTERED IMAGES)
+========================= */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.home-grid article {
+    text-align: center;
+}
+
+.home-grid img {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Newsletter */
+.newsletter {
+    margin-top: 3rem;
+    /* creates clear space above the section */
+}

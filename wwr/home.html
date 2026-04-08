@@ -8,10 +8,9 @@
     <title>Home | White Water Rafting (WWR)</title>
 
     <meta name="description"
-      content="White Water Rafting (WWR) offers thrilling and safe rafting adventures for families and thrill seekers.">
+      content="Learn about White Water Rafting (WWR): our history and the adventures we offer.">
     <meta name="author" content="Aine Villegas">
 
-    <!-- ✅ CORRECT PATH -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -34,7 +33,7 @@
 
     <main>
 
-        <!-- HERO -->
+        <!-- ✅ HERO (allowed, not a section) -->
         <div class="hero">
             <img src="images/rafting65_600.jpg" alt="White water rafting adventure">
 
@@ -45,50 +44,68 @@
                     Experience exciting, safe, and unforgettable white‑water rafting adventures.
                     Whether you’re new or experienced, we have a trip for you.
                 </p>
+
                 <img src="images/rafting22_600.jpg"
                   alt="Rafting group enjoying a guided river trip">
             </article>
         </div>
 
-        <!-- CTA -->
-        <section class="trips-cta">
-            <h2>Ready for Your Next Adventure?</h2>
-            <p>Discover river trips designed for all skill levels.</p>
-            <a class="cta-button" href="trips.html">View Our Trips</a>
+        <!-- ✅ SECTION 1 (REQUIRED) -->
+        <section>
+            <h2>History</h2>
+            <p>
+                White Water Rafting (WWR) began as a small group of river enthusiasts who shared
+                a passion for adventure. Over time, the company grew into a trusted guide service
+                focused on safety, excitement, and respect for nature.
+            </p>
         </section>
 
-        <!-- GRID -->
-        <section class="home-grid">
-            <article>
-                <img src="images/rafting42_600.jpg" alt="Professional rafting guides">
-                <h3>Expert Guides</h3>
-                <p>
-                    Our trained guides prioritize safety while making every trip fun and memorable.
-                </p>
-            </article>
+        <!-- ✅ SECTION 2 (REQUIRED) -->
+        <section>
+            <h2>Adventure Awaits You!</h2>
 
-            <article>
-                <img src="images/rafting29_600.jpg" alt="Scenic rafting experience">
-                <h3>Scenic Rivers</h3>
-                <p>
-                    Paddle through beautiful landscapes and enjoy nature at its best.
-                </p>
-            </article>
-        </section>
+            <!-- CTA -->
+            <div class="trips-cta">
+                <p>Discover river trips designed for all skill levels.</p>
+                <a class="cta-button" href="trips.html">View Our Trips</a>
+            </div>
 
-        <!-- NEWSLETTER -->
-        <section class="newsletter">
-            <h2>Sign Up for Our Newsletter</h2>
+            <!-- GRID CONTENT -->
+            <div class="home-grid">
 
-            <form method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <article>
+                    <img src="images/rafting42_600.jpg" alt="Professional rafting guides">
+                    <h3>Expert Guides</h3>
+                    <p>
+                        Our trained guides prioritize safety while making every trip fun and
+                        memorable.
+                    </p>
+                </article>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <article>
+                    <img src="images/rafting29_600.jpg" alt="Scenic rafting experience">
+                    <h3>Scenic Rivers</h3>
+                    <p>
+                        Paddle through beautiful landscapes and enjoy nature at its best.
+                    </p>
+                </article>
 
-                <button type="submit">Subscribe</button>
-            </form>
+            </div>
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Sign Up for Our Newsletter</h3>
+
+                <form method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </section>
 
     </main>
