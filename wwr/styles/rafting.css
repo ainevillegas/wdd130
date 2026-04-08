@@ -6,14 +6,13 @@
     --text-dark: #133936;
 }
 
-/* Reset */
+/* Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base */
 html,
 body {
     height: 100%;
@@ -26,28 +25,31 @@ body {
     line-height: 1.5;
 }
 
-/* Layout containers */
-header,
-main,
-footer {
+/* Layout */
+main {
     max-width: 840px;
     margin: 0 auto;
     padding: 16px;
 }
 
-/* Header */
+header,
+footer {
+    width: 100%;
+    padding: 16px;
+}
+
+/* Header and Navigation */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 24px;
     background-color: var(--primary-color);
-    color: var(--primary-text);
+    gap: 24px;
 }
 
 header img {
-    max-height: 64px;
-    display: block;
+    max-height: 84px;
+    width: auto;
 }
 
 nav ul {
@@ -67,77 +69,118 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Headings */
+/* Headings View */
 h1,
 h2 {
     font-family: Georgia, "Times New Roman", serif;
     color: var(--secondary-color);
 }
 
-/* Spacing */
 section,
 article,
 p {
     margin-top: 16px;
 }
 
-/* Hero (if used on other pages) */
+/*Hero View */
 .hero {
     position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
 
 .hero img {
     width: 100%;
+    height: 560px;
+    object-fit: cover;
     display: block;
-    height: auto;
 }
 
+/* HERO TITLE BAR */
 .hero h1 {
     position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(19, 118, 108, 0.95);
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: rgba(15, 79, 73, 0.9);
     color: #ffffff;
+    text-align: center;
+    padding: 16px 0;
     margin: 0;
+    font-size: 1.8rem;
 }
 
+/* Our Mission View */
 .hero article {
     position: absolute;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    padding: 16px;
-    background-color: #ffffff;
-    color: #222222;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    max-width: 1300px;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 28px 32px;
+    display: grid;
+    grid-template-columns: 200px 1fr 170px;
+    align-items: center;
+    gap: 28px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero article h2 {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.hero article p {
+    margin: 0;
+    color: #111;
+    line-height: 1.65;
 }
 
 .hero article img {
-    float: right;
-    width: 125px;
+    width: 170px;
     height: auto;
-    margin-left: 12px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 24px;
-    background-color: #e6e6e6;
+/* History */
+.history {
+    text-align: center;
 }
 
-.socialmedia {
-    display: flex;
-    gap: 12px;
+.history img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
 }
 
-.socialmedia img {
-    width: 24px;
-    height: 24px;
+/* Adventure */
+.adventures {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-weight: 500;
 }
 
 /* Contact Page */
@@ -149,60 +192,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-    margin-top: 24px;
 }
 
-.map iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-}
-
-.contact-form fieldset {
-    border: 1px solid #ccc;
-    padding: 16px;
-}
-
-.contact-form label,
-.contact-form p {
-    display: block;
-    margin-top: 12px;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-}
-
-.contact-form .checkbox {
-    margin-top: 12px;
-    font-weight: normal;
-}
-
-.contact-form .checkbox input {
-    width: auto;
-    margin-top: 0;
-    margin-right: 8px;
-}
-
-.contact-form button {
-    margin-top: 16px;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.contact-form button:hover {
-    background-color: var(--primary-color);
-}
-
-/* Employees */
+/* Employee View */
 .employees {
     margin-top: 40px;
     text-align: center;
@@ -216,16 +208,118 @@ footer {
 
 .employee-gallery img {
     width: 100%;
-    display: block;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 20px;
+    height: 20px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
 
+    .contact-grid,
     .employee-gallery {
         grid-template-columns: 1fr;
     }
+
+    .hero article {
+        grid-template-columns: 1fr;
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .hero article img {
+        margin: 1rem auto 0;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Trip Page */
+
+.trips-cta {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.trips-cta h1 {
+    color: #ffffff;
+}
+
+.trips-cta .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #f4a261;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Trip cards grid */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.trip-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.trip-table-section {
+    margin-top: 3rem;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.trip-table-section th {
+    background-color: var(--primary-color);
+    color: #ffffff;
 }
