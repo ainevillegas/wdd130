@@ -230,13 +230,6 @@ p {
     overflow-x: auto;
 }
 
-.trip-table-section table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.trip-table-section th,
-
 /* =========================
    FOOTER – MATCH DESIGN
 ========================= */
@@ -409,5 +402,3 @@ footer {
         /* ✅ stack on mobile */
     }
 }
-
-``
