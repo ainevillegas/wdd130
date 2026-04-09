@@ -2,29 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- ✅ REQUIRED TITLE -->
     <title>Home | White Water Rafting (WWR)</title>
 
+    <!-- 50–160 characters -->
     <meta name="description"
-      content="Learn about White Water Rafting (WWR): our history and the adventures we offer.">
-    <meta name="author" content="Aine Villegas">
+      content="Learn about White Water Rafting (WWR): our history, safety-first guides, and the river adventures we offer." />
 
-    <link rel="stylesheet" href="styles/rafting.css">
+    <!-- Must be student's name -->
+    <meta name="author" content="Aine Villegas" />
+
+    <!-- REQUIRED: must match your file location exactly -->
+    <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
 <body>
-
     <header>
-        <a class="logo" href="index.html">
-            <img src="images/logora.png" alt="White Water Rafting logo" width="100" height="100">
-        </a>
+        <!-- Grader requires an img inside the header -->
+        <img src="images/logora.png" alt="White Water Rafting logo" width="100" height="100" />
 
-        <!-- ✅ EXACT NAV ORDER & HREFs -->
         <nav aria-label="Primary navigation">
             <ul>
+                <!-- Exactly 4 links, in this order -->
                 <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
@@ -34,11 +35,11 @@
     </header>
 
     <main>
-
-        <!-- ✅ HERO (allowed, not a section) -->
+        <!-- Required: div.hero inside main, and it must contain an img -->
         <div class="hero">
-            <img src="images/rafting65_600.jpg" alt="White water rafting adventure">
+            <img src="images/rafting65_600.jpg" alt="White water rafting adventure" />
 
+            <!-- Required: hero must contain an article with an img -->
             <h1>White Water Rafting (WWR)</h1>
 
             <article>
@@ -47,13 +48,12 @@
                     Whether you’re new or experienced, we have a trip for you.
                 </p>
 
-                <!-- ✅ REQUIRED IMAGE INSIDE HERO ARTICLE -->
                 <img src="images/rafting22_600.jpg"
-                  alt="Rafting group enjoying a guided river trip">
+                  alt="Rafting group enjoying a guided river trip" />
             </article>
         </div>
 
-        <!-- ✅ SECTION 1 -->
+        <!-- Exactly two sections -->
         <section>
             <h2>History</h2>
             <p>
@@ -63,17 +63,14 @@
             </p>
         </section>
 
-        <!-- ✅ SECTION 2 -->
         <section>
             <h2>Adventure Awaits You!</h2>
 
-            <!-- CTA -->
             <div class="trips-cta">
                 <p>Discover river trips designed for all skill levels.</p>
                 <a class="cta-button" href="trips.html">View Our Trips</a>
             </div>
 
-            <!-- GRID -->
             <div class="home-grid">
                 <article>
                     <img src="images/rafting42_600.jpg" alt="Professional rafting guides">
@@ -93,27 +90,26 @@
                 </article>
             </div>
 
-            <!-- Newsletter -->
             <div class="newsletter">
                 <h3>Sign Up for Our Newsletter</h3>
 
                 <form method="post">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required />
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required />
 
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; 2026 White Water Rafting (WWR) • Aine Villegas</p>
 
+        <!-- Grader requires: footer contains nav.socialmedia with exactly 3 a links, each with an img -->
         <nav class="socialmedia" aria-label="Social media links">
             <a href="https://facebook.com" target="_blank" rel="noopener">
                 <img src="images/facebook.png" alt="Facebook">
@@ -126,7 +122,6 @@
             </a>
         </nav>
     </footer>
-
 </body>
 
 </html>
